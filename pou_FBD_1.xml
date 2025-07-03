@@ -23,6 +23,7 @@
          <varinfo type="tag" data="Output signal"/>
          <varinfo type="desc" data="main output blinking signal"/>
             </var>
+            <var name="lapin" type="BOOL"/>
          </vargroup>
 <defines name="FBD_1"></defines>
          <sourceFBD sxcell="16" sycell="16">
@@ -46,6 +47,8 @@ This project demonstrates a simple use of the &quot;BLINK&quot; function block f
             <FBDbox id="15" order="0" dx="11" dy="20" sx="3" sy="3" nbi="2" nbo="1" style="0" kind="OP" type="/"/>
             <FBDcomment id="10" order="0" dx="19" dy="21" sx="5" sy="1" style="3">Converts to TIME            </FBDcomment>
             <FBDvarbox id="14" order="0" dx="8" dy="22" sx="2" sy="1" symbol="2" style="0"/>
+            <FBDvarbox id="19" order="0" dx="19" dy="29" sx="8" sy="1" symbol="lapin" style="0"/>
+            <FBDvarbox id="20" order="0" dx="8" dy="30" sx="8" sy="1" symbol="0" style="0"/>
             <FBDline negate="0" idfrom="2" idto="11" pinfrom="0" pinto="0" cutx="50" cuty="50">
                <FBDlinepoint xcell="24" ycell="16" xincell="0" yincell="8"/>
                <FBDlinepoint xcell="25" ycell="16" xincell="1" yincell="8"/>
@@ -117,6 +120,12 @@ This project demonstrates a simple use of the &quot;BLINK&quot; function block f
                <FBDlinepoint xcell="8" ycell="8" xincell="0" yincell="8"/>
                <FBDlinepoint xcell="8" ycell="9" xincell="0" yincell="8"/>
                <FBDlinepoint xcell="8" ycell="9" xincell="1" yincell="8"/>
+            </FBDline>
+            <FBDline negate="0" idfrom="20" idto="19" pinfrom="0" pinto="0" cutx="50" cuty="50">
+               <FBDlinepoint xcell="16" ycell="30" xincell="0" yincell="8"/>
+               <FBDlinepoint xcell="17" ycell="30" xincell="9" yincell="8"/>
+               <FBDlinepoint xcell="17" ycell="29" xincell="9" yincell="8"/>
+               <FBDlinepoint xcell="19" ycell="29" xincell="1" yincell="8"/>
             </FBDline>
          </sourceFBD>
       </pou>
